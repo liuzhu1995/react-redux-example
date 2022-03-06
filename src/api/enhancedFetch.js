@@ -36,10 +36,10 @@ async function enhancedFetch(input, option = {}) {
     console.log(response, 'fetch');
     if (response.ok) {
       return response;
-    } 
-      throw new Error(response.statusText);
+    }
+    throw new Error(response.statusText);
   } catch (e) {
-    return Promise.rejected(e.message? e.message : response)
+    return Promise.reject(e.message? e.message : response)
   }
 }
 

@@ -1,0 +1,42 @@
+.basicWrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.nav {
+  width: 220px;
+  background-color: indianred;
+}
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  height: 80px;
+  background-color: palegoldenrod;
+  ul {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+    height: 100%;
+    li {
+      //list-style: none;
+      margin: 0 14px;
+    }
+  }
+  .logout {
+    cursor: pointer;
+  }
+}
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  padding: 24px;
+}

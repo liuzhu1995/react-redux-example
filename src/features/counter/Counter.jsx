@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { connect, useSelector, useDispatch } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { selectorCount, selectorUser, increment, decrement, fetchUserById } from "./counterSlice";
 
 // const Counter = ({ dispatch, count }) => {
@@ -22,11 +22,4 @@ const Counter = () => {
   )
 }
 
-function mapStateToProps(state) {
-  return {
-    count: state.count,
-  }
-}
-
-// export default connect(mapStateToProps)(Counter);
 export default Counter;
